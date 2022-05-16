@@ -81,3 +81,6 @@ end
 
 gem 'devise'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'sass-rails'
+gem 'bootstrap', '~> 5.1.3'
+gem 'jquery-rails'
