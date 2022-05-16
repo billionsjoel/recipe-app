@@ -62,8 +62,10 @@ Open [http://localhost:3000/api-docs/index.html](http://localhost:3000/api-docs/
 
 👤 **Jos Kalenda**
 
-- GitHub: [@joskalenda](https://github.com/billionsjoel)
-- LinkedIn: [joskalenda](https://www.linkedin.com/in/billionsjoel/)
+- GitHub: [@jos kalenda](https://github.com/joskalenda)
+- LinkedIn: [@jos kalenda](https://www.linkedin.com/in/jos-kalenda/)
+- Twiter: [@jos kalenda](https://www.linkedin.com/in/JosKalenda/)
+
 
 ## 🤝 Contributing
 
