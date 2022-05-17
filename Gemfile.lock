@@ -293,6 +293,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   pg (~> 1.1)
+  popper_js (~> 2.9.3)
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.4)
   rspec-rails

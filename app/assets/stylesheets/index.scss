@@ -22,3 +22,16 @@
 	text-align: center;
 	padding: 1rem;
 }
+
+.flash {
+	position: absolute;
+	top: 6%;
+	left: 80%;
+	z-index: 1;
+	display: flex;
+	width: 20rem;
+	height: 2rem;
+	justify-content: left;
+	align-items: center;
+	padding: 1.2rem;
+}
