@@ -1,4 +1,6 @@
+# rubocop: disable Style/EmptyMethod
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   def index
     @user = User.all
   end
@@ -7,3 +9,4 @@ class UsersController < ApplicationController
     @user = User.includes(:recipes).find(params[:id])
   end
 end
+# rubocop: enable Style/EmptyMethod
