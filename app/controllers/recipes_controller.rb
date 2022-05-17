@@ -1,5 +1,4 @@
 class RecipesController < ApplicationController
-
   # Get /recipes
   def index
     @recipe = Recipe.all
@@ -27,9 +26,7 @@ class RecipesController < ApplicationController
       render :new
       flash[:alert] = 'Recipe not added'
     end
-
   end
-
 
   def recipe_params
     params.require(:recipe).permit(:name, :preparation_time, :public, :description)
