@@ -3,12 +3,11 @@
   <% @recipes.each do |recipe|%>
     <%= link_to recipe do %>
       <ul class="">
-        <li class="recipeName">Recipename:<%= recipe.name %></li>
+        <li class="recipeName">name:<%= recipe.name %></li>
         <li class="recipePublic">description:<%= recipe.description %></li>
         </ul>
-        # <% if can? :destroy, recipe %>
-        #   <%= button_to 'Remove ', user_recipe_path(@recipe.user, @recipe.id), method: :delete, data: { confirm: 'Are you sure?'}, class: '' %>
-        # <% end %>
     <% end %>
   <% end %>
+  <%= link_to 'Add a recipe', new_recipe_path, class: "" %>
+
 </ul>
