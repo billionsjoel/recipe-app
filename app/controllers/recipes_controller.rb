@@ -1,36 +1,38 @@
 class RecipesController < ApplicationController
+
+  # Get /recipes
   def index
     @recipe = Recipe.all
-    #fix n+1 issue
-    # @user = User.includes(:recipes.find(params[:user_id])
-    # @posts = @user.recipes
   end
 
+  # get/recipes/:recipe_id
   def show
     @recipe = Recipe.find(params[:id])
   end
 
+  # get/recipes/new
   def new
     @recipe = Recipe.new
   end
 
+  # post/recipes
   def create
-    @recipe = Recipe.new(post_params)
+    @recipe = Recipe.new(recipe_params)
     @recipe.user = current_user
 
     if @recipe.save
-      redirect_to user_path(id: @recipe.user_id)
+      redirect_to recipes_path(id: @recipe.user_id)
       flash[:notice] = 'Recipe added successfully!'
     else
       render :new
-      flash[:alert] = 'Post not submitted'
+      flash[:alert] = 'Recipe not added'
     end
 
   end
 
 
   def recipe_params
-    params.require(:post).permit(:title, :text)
+    params.require(:recipe).permit(:name, :preparation_time, :public, :description)
   end
   private :recipe_params
 end
