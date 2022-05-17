@@ -1,2 +1,15 @@
-<h1>Recipes#show</h1>
-<p>Find me in app/views/recipes/show.html.erb</p>
+<h1>Recipes details#show</h1>
+<ul class="">
+  <h1>Recipe details</h1>
+  <%= link_to "Back to recipes", recipe_path(id: @recipe.user_id), class: "addCom" %>
+  <ul class="">
+    <li class="recipeName">Recipename:<%= recipe.name %></li>
+    <li class="recipePrepTime">preparation_time:<%= recipe.preparation_time %></li>
+    <li class="recipePublic">description:<%= recipe.description %></li>
+    <li class="recipePublic">public?:<%= recipe.public %></li>
+  </ul>
+
+  # <div class="addIngredian">
+  #   <%= link_to 'Add ingredians', new_user_recipe...(uuser_id: @recipe.user_id, recipe_id: @recipe.id), class 'addIngredian' %>
+  # </div>
+</ul> 
