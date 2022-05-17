@@ -79,5 +79,9 @@ group :test do
   # gem 'webdrivers'
 end
 
+gem 'bootstrap', '~> 5.1.3'
 gem 'devise'
+gem 'jquery-rails'
+gem 'popper_js', '~> 2.9.3'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'sass-rails'
