@@ -14,4 +14,12 @@ Rails.application.routes.draw do
   root "users#index"
 
   resource :user
+
+  get 'foods/index' , to: 'foods#index'
+  get 'foods' , to: 'foods#index'
+  get 'foods/show' , to: 'foods#show'
+  get 'foods/new' , to: 'foods#new'
+  get 'foods/delete' , to: 'foods#delete'
+
+  resource :foods, only: [:index, :show, :new, :create]
 end
