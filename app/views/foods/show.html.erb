@@ -1,6 +1,12 @@
 <%= render 'shared/navbar' %>
 <div class="container">
   <h3 class="mt-4"> Showing list of foods</h3>
+<% if @foods.blank? %>
+<p>There are not any foods currently in the system.</p>
+<% else %>
+<p>These are the current foods in our system</p>
+<% end %>
+
   <div class="d-flex justify-content-end"> <button class="btn btn-sm btn-primary">Add Food</button></div>
   <div class="mt-4">
     <table class="table table-striped table-hover">
@@ -11,11 +17,13 @@
         <td>Actions</td>
       </thead>
       <tbody>
-        <tr>
-          <td>Apple</td>
-          <td>grams</td>
-          <td>$5</td>
-          <td>Delete</td>
+        <tr id = "foods">
+          <% @foods.each do |f| %>
+          <td><%=  f.name -%></td>
+          <td><%=  f.measurement_unit -%></td>
+          <td>$<%=  f.price -%></td>
+          <td><%= "delete" -%></td>
+          <% end %>
         </tr>
       </tbody>
     </table>
