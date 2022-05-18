@@ -16,17 +16,17 @@
         <td>Unit Price</td>
         <td>Actions</td>
       </thead>
-      <tbody>
-        <tr id = "foods">
-          <% @foods.each do |f| %>
-          <td><%=  f.name -%></td>
-          <td><%=  f.measurement_unit -%></td>
-          <td>$<%=  f.price -%></td>
-          <td><%= link_to "Delete", {:action => 'delete', :id => f.id},
-      :confirm => "Are you sure you want to delete this item?" %></td>
+        <% @foods.each do |f| %>
+          <tbody>
+              <tr>
+                <td><%=  f.name -%></td>
+                <td><%=  f.measurement_unit -%></td>
+                <td>$<%=  f.price -%></td>
+                <td><%= link_to "Delete", {:action => 'delete', :id => f.id},
+            :confirm => "Are you sure you want to delete this item?" %></td>
+              </tr><br>
+          </tbody>
           <% end %>
-        </tr>
-      </tbody>
     </table>
 </div>
 </div>
