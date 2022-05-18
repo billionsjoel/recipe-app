@@ -1,14 +1,31 @@
 class FoodsController < ApplicationController
-  def show
+  def index
     @foods = Food.all
   end
 
-  def create
+  def show
+    @foods = Food.find(params[:id])
+  end
+
+  def new
     @foods = Food.new
   end
 
-  def delete
-      Food.find(params[:id]).destroy
-      redirect_to :action => 'show'
+  def create
+    @foods = Food.new(food_params)
+    @foods.user = current_user
+
+    if @foods.save
+      redirect_to root_path(id: @foods.user_id)
+      flash[:notice] = 'Food added successfully!'
+    else
+      render :new
+      flash[:alert] = 'Food not added'
+    end
   end
+
+  def food_params
+    params.require(:food).permit(:name, :measurement_unit, :price)
+  end
+  private :food_params
 end

@@ -1,0 +1,21 @@
+<%= form_with(model: @foods) do |f| %>
+
+  <div class="mb-3 mt-3">
+    <%= f.label :Name %><br />
+    <%= f.text_field :name, autofocus: true,class: 'form-control', autocomplete: "name", required: true  %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :measurement_unit %><br />
+    <%= f.text_field :measurement_unit ,class: 'form-control', autocomplete: "measurement_unit", required: true  %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :price %><br />
+    <%= f.number_field :price ,class: 'form-control', autocomplete: "price", required: true  %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
