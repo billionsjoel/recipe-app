@@ -11,22 +11,24 @@
   <div class="mt-4">
     <table class="table table-striped table-hover">
       <thead>
-        <td>Food</td>
-        <td>Measurement Unit</td>
-        <td>Unit Price</td>
-        <td>Actions</td>
-      </thead>
-      <tbody>
-        <tr id = "foods">
-          <% @foods.each do |f| %>
-          <td><%=  f.name -%></td>
-          <td><%=  f.measurement_unit -%></td>
-          <td>$<%=  f.price -%></td>
-          <td><%= link_to "Delete", {:action => 'delete', :id => f.id},
-      :confirm => "Are you sure you want to delete this item?" %></td>
-          <% end %>
+        <tr>
+          <th>Food</th>
+          <th>Measurement Unit</th>
+          <th>Unit Price</th>
+          <th>Actions</th>
         </tr>
-      </tbody>
+      </thead>
+        <tbody>
+          <% @foods.each do |f| %>
+            <tr>
+                <td><%= f.name -%></td>
+                <td><%= f.measurement_unit -%></td>
+                <td>$<%= f.price -%></td>
+                <td><%= link_to "Delete", {:action => 'delete', :id => f.id},
+            :confirm => "Are you sure you want to delete this item?" %></td>
+            </tr>
+          <% end %>
+        </tbody>
     </table>
 </div>
 </div>
