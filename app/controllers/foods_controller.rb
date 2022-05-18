@@ -16,7 +16,7 @@ class FoodsController < ApplicationController
     @foods.user = current_user
 
     if @foods.save
-      redirect_to root_path(id: @foods.user_id)
+      redirect_to foods_path
       flash[:notice] = 'Food added successfully!'
     else
       render :new
