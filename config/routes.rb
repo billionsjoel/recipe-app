@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   resource :user
 
   resource :foods
+
+  get 'foods/delete' , to: 'foods#delete'
+
 end

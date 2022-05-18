@@ -22,7 +22,8 @@
           <td><%=  f.name -%></td>
           <td><%=  f.measurement_unit -%></td>
           <td>$<%=  f.price -%></td>
-          <td><%= "delete" -%></td>
+          <td><%= link_to "Delete", {:action => 'delete', :id => f.id},
+      :confirm => "Are you sure you want to delete this item?" %></td>
           <% end %>
         </tr>
       </tbody>
