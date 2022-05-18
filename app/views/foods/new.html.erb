@@ -1,0 +1,30 @@
+<h1 class="center mt-4">Add new food</h1>
+
+<div class="container">
+  <div class="border-form mb-3">
+    <%= form_with model: @food do |f| %>
+
+      <div class="mb-3 mt-3">
+        <%= f.label :Name %><br />
+        <%= f.text_field :name, autofocus: true,class: 'form-control', autocomplete: "name" %>
+      </div>
+
+      <div class="mb-3">
+        <%= f.label :measurement_unit %><br />
+        <%= f.text_field :measurement_unit ,class: 'form-control', autocomplete: "measurement_unit" %>
+      </div>
+
+      <div class="mb-3">
+        <%= f.label :price %><br />
+        <%= f.number_field :measurement_unit ,class: 'form-control', autocomplete: "price" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+<div class="center">
+  <%= link_to 'Back', {:action => 'show'} %>
+</div>
+</div>

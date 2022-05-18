@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   resource :foods
 
   get 'foods/delete' , to: 'foods#delete'
+  post 'foods' , to: 'foods#create'
 
 end
