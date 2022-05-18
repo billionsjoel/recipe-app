@@ -1,12 +1,13 @@
 class RecipesController < ApplicationController
   # Get /recipes
   def index
-    @recipe = Recipe.all
+    @recipe = current_user.recipes
   end
 
   # get/recipes/:recipe_id
   def show
     @recipe = Recipe.find(params[:id])
+    # @recipe = current_user.recipes.includes(:recipes).find(params[:id])
   end
 
   # get/recipes/new
@@ -26,6 +27,10 @@ class RecipesController < ApplicationController
       render :new
       flash[:alert] = 'Recipe not added'
     end
+  end
+
+  def public_recipe
+    @public_recipes = Recipe.where('public = true').order(id: :desc).includes(:food).includes(:user)
   end
 
   def recipe_params
