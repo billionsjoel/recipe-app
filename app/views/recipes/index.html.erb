@@ -1,0 +1,17 @@
+<%= render "shared/navbar" %>
+<div class="container">
+<ul class="recipeContaine">
+  <h2 class="center">All Recipes</h1>
+  <% @recipe.each do |recipe|%>
+    <%= link_to recipe do %>
+      <ul class="">
+        <li class="recipeName">name:<%= recipe.name %></li>
+        <li class="recipePublic">description:<%= recipe.description %></li>
+        </ul>
+    <% end %>
+  <% end %>
+  <%= link_to 'Add a recipe', new_recipe_path, class: "" %>
+
+</ul>
+</div>
+  <%= render "shared/footer" %>
