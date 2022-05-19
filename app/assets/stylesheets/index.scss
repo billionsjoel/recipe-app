@@ -36,3 +36,93 @@
   align-items: center;
   padding: 1.2rem;
 }
+
+.pub-rec {
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.pub-name,
+.pub-tot {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px;
+  color: black;
+}
+
+.pub-tot-p {
+  padding: 0;
+  margin: 0;
+}
+
+.rec-detail {
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 8px;
+  
+}
+
+.rec-detail li {
+  list-style: none;
+  color: black;
+}
+
+.rec-detail li span,
+.rec-all li span{
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  font-weight: bolder;
+}
+
+.rec-all {
+  margin: 9px auto;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 500px;
+}
+.rec-all li {
+  align-items: center;
+  text-align: left;
+}
+
+.rec-all button {
+ margin-right: 10px;
+}
+
+.rec-all a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.new--rec {
+  padding-left: 375px;
+}
+
+.actions {
+  padding-left: 440px;
+}
+
+
+
+

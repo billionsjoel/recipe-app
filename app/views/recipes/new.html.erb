@@ -1,9 +1,11 @@
 <%= render "shared/navbar" %>
 <div class="container">
-  <div class="">
+  <div class="mt-4">
 		<h1 class="center">Add Recipe</h1>
-		<%= render 'form', recipe: @recipe %>
-		<%= link_to 'Back', url_for(:back), class: "button is-light mt-2" %>
+		<div class="border-form mb-4">
+				<%= render 'form', recipe: @recipe %>
+		</div>
+		<%= link_to 'Back', url_for(:back), class: "actions" %>
 	</div>
 </div>
 <%= render "shared/footer" %>
