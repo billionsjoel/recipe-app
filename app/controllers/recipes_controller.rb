@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  # load_and_authorize_resource except: :public_recipes
   # Get /recipes
   def index
     @recipe = current_user.recipes
@@ -6,7 +7,9 @@ class RecipesController < ApplicationController
 
   # get/recipes/:recipe_id
   def show
-    @recipe = Recipe.find(params[:id])
+    # @recipe = Recipe.find(params[:id])
+    @recipe = Recipe.includes(:recipe_foods).find(params[:id])
+
     # @recipe = current_user.recipes.includes(:recipes).find(params[:id])
   end
 
@@ -29,8 +32,15 @@ class RecipesController < ApplicationController
     end
   end
 
-  def public_recipe
-    @public_recipes = Recipe.where('public = true').order(id: :desc).includes(:food).includes(:user)
+  def destroy
+    @recipe.destroy
+    respond_to do |format|
+      format.html { redirect_to recipes_url, notice: 'Recipe was successfully destroyed.' }
+    end
+  end
+
+  def public_recipes
+    @recipes = Recipe.where('public = true').order(id: :desc).includes(:foods).includes(:user)
   end
 
   def recipe_params
