@@ -29,7 +29,7 @@ class RecipeFoodsController < ApplicationController
   end
 
   private
-  
+
   def recipe_food_params
     params.fetch(:recipe_food, {}).permit(:quantity, :food_id)
   end
