@@ -1,7 +1,7 @@
 <%= form_with(model: recipe_food) do |form| %>
 
   <div class="mb-3 mt-3">
-    <%= form.label :food, %><br />
+    <%= form.label :food %><br />
     <div class="select is-fullwidth">
       <%= form.select :food_id, @foods.collect { |food| [food.name, food.id] }, class: "form-control" %>
     </div>
