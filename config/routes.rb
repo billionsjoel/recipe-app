@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   get 'foods/show' , to: 'foods#show'
   get 'foods/new' , to: 'foods#new'
   get 'foods/delete' , to: 'foods#delete'
+  get 'general_shopping_list' , to: 'foods#list'
 
   resource :foods, only: [:index, :show, :new, :create]
 end
