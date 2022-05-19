@@ -30,7 +30,7 @@ class FoodsController < ApplicationController
   end
 
   def list
-
+    @foods = Food.all
   end
 
   def food_params
