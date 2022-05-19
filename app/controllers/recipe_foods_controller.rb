@@ -52,7 +52,7 @@ class RecipeFoodsController < ApplicationController
   private
 
   def set_foods
-    @foods = current_user.foods.map { |food| [.name, food.id] }
+    @foods = current_user.foods.map { |food| [:name, food.id] }
   end
 
   # Use callbacks to share common setup or constraints between actions.
