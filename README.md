@@ -7,9 +7,9 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
 > |-|-----------|-|---------|-|----------------|-|
 > |-| ![screenshot](app/assets/images/home.png) |-| ![screenshot](app/assets/images/allre.png) |-| ![screenshot](app/assets/images/publis.png) |-|
 
-> |-| Foods     |-| shopping list |-| General list |-|
-> |-|-----------|-|--------------|-|---------------|-|
-> |-| ![screenshot]('app/assets/images/foodli.png) |-| ![screenshot](app/assets/images/shoplis.png) |-|
+> |-| Foods     |-| shopping list |-|
+> |-|-----------|-|--------------|-|
+> |-| ![screenshot](app/assets/images/foodli.png) |-| ![screenshot](app/assets/images/shoplis.png) |-|
 
 ## objectives
 
