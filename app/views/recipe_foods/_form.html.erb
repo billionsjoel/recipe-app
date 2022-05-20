@@ -2,7 +2,7 @@
 
   <div class="mb-3 mt-3">
     <%= form.label :food %>
-      <%= form.select :food_id, @foods.collect { |food| [food.name, food.id] }, class: "form-control" %>
+      <%= form.select :food_id, @foods.collect { |food| [food.name, food.id] }, class: "food" %>
   </div>
 
   <div class="mb-3">
