@@ -1,4 +1,6 @@
-<h1 class="title is-4 has-text-centered">Public Recipes</h1>
-<div class="columns is-flex-direction-column is-align-items-center">
+<%= render "shared/navbar" %>
+<h1 class="center">Public Recipes</h1>
+<div class="pub-all-rec">
   <%= render partial: "public_recipe", collection: @recipes %>
 </div>
+<%= render "shared/footer" %>

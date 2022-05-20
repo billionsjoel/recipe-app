@@ -30,16 +30,6 @@ class RecipeFoodsController < ApplicationController
 
   private
 
-  # def set_foods
-  #   @foods = current_user.foods.map { |food| [:name, food.id] }
-  # end
-
-  # Use callbacks to share common setup or constraints between actions.
-  # def set_recipe_food
-  #   @recipe_food = RecipeFood.includes(:recipe, :food).find(params[:id])
-  # end
-
-  # Only allow a list of trusted parameters through.
   def recipe_food_params
     params.fetch(:recipe_food, {}).permit(:quantity, :food_id)
   end

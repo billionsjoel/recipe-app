@@ -4,10 +4,10 @@
   <div class="container">
     <div class="row center">
       <div class="col-md-6">
-        <p class="display-6">Amount of food items to buy: 3 </p>
+        <p class="display-6">Amount of food items to buy: <%= @foods.count %> </p>
       </div>
       <div class="col-md-6">
-        <p class="display-6">Total value of food needed: $819 </p>
+        <p class="display-6">Total value of food needed: $<%= @foods.sum('price') %></p>
       </div>
     </div>
 

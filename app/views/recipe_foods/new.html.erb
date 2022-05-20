@@ -1,8 +1,10 @@
-<div class="columns is-justify-content-center">
-  <div class="column is-two-fifths-desktop">
-		<h1 class="title is-4">Add Ingredient</h1>
-
+<%= render "shared/navbar" %>
+<div class="column is-two-fifths-desktop">
+	<h1 class="center">Add Ingredient</h1>
+	
+	<div class='border-form'>
 		<%= render 'form', recipe_food: @recipe_food %>
-		<%= link_to 'Back', url_for(:back), class: "button is-light mt-2" %>
-	</div>
+	</dev>
+
+	<%= link_to 'Back', url_for(:back), class: "button is-light mt-2" %>
 </div>
