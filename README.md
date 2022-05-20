@@ -3,13 +3,13 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
 
 ## Views
 
-> | | Home page | | Recipes | | Public recipes | |
+> |-| Home page |-| Recipes |-| Public recipes |-|
 > |-|-----------|-|---------|-|----------------|-|
-> || []('app/assets/images/home.png') || []('app/assets/images/all re.png') || []('app/assets/images/pub lis.png') ||
+> |-| ![screenshot](app/assets/images/home.png) |-| ![screenshot](app/assets/images/allre.png) |-| ![screenshot](app/assets/images/publis.png) |-|
 
-> | | Foods     | | shopping list | | General list | |
-> |-|-----------|-|--------------|-|---------------| |
-> || []('app/assets/images/food li.png') || []('app/assets/images/shop lis.png') ||
+> |-| Foods     |-| shopping list |-| General list |-|
+> |-|-----------|-|--------------|-|---------------|-|
+> |-| ![screenshot]('app/assets/images/foodli.png) |-| ![screenshot](app/assets/images/shoplis.png) |-|
 
 ## objectives
 
