@@ -1,0 +1,34 @@
+<%= render "shared/navbar" %>
+  <h1 class="center"> Shopping List </h1>
+
+  <div class="container">
+    <div class="row center">
+      <div class="col-md-6">
+        <p class="display-6">Amount of food items to buy: <%= @foods.count %> </p>
+      </div>
+      <div class="col-md-6">
+        <p class="display-6">Total value of food needed: $<%= @foods.sum('price') %></p>
+      </div>
+    </div>
+
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+        <tbody>
+          <% @foods.each do |f| %>
+            <tr>
+                <td><%= f.name -%></td>
+                <td><%= f.measurement_unit -%></td>
+                <td>$<%= f.price -%></td>
+            </tr>
+          <% end %>
+        </tbody>
+    </table>
+
+  </div>
+<%= render "shared/footer" %>

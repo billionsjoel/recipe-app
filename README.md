@@ -1,6 +1,16 @@
 # RUBY RECIPE APP
 The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
+## Views
+
+> |-| Home page |-| Recipes |-| Public recipes |-|
+> |-|-----------|-|---------|-|----------------|-|
+> |-| ![screenshot](app/assets/images/home.png) |-| ![screenshot](app/assets/images/allre.png) |-| ![screenshot](app/assets/images/publis.png) |-|
+
+> |-| Foods     |-| shopping list |-|
+> |-|-----------|-|--------------|-|
+> |-| ![screenshot](app/assets/images/foodli.png) |-| ![screenshot](app/assets/images/shoplis.png) |-|
+
 ## objectives
 
 - Use Ruby gems as a software packages system.
@@ -11,16 +21,12 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
 - Use params from browser requests in a safe way.
 - Use preprocessed HTML file with embedded Ruby code.
 - Use layouts and templates for shared content.
-- Use database migration files to maintain database schema.
 - Use validations for models.
 - Secure app from n+1 problems.
 - Understand what ORM is.
 - Write SQL queries with ActiveRecord.
 - Set up associations between models.
-- Build a web app that requires the user to log in.
-- Describe the difference between authorization and authentication.
 - Use Devise gem for authentication.
-- Understand how sessions and cookies can support authentication.
 - Limit access to web app resources based on authorization rules.
 
 ## Built With
@@ -62,8 +68,10 @@ Open [http://localhost:3000/api-docs/index.html](http://localhost:3000/api-docs/
 
 👤 **Jos Kalenda**
 
-- GitHub: [@joskalenda](https://github.com/billionsjoel)
-- LinkedIn: [joskalenda](https://www.linkedin.com/in/billionsjoel/)
+- GitHub: [@jos kalenda](https://github.com/joskalenda)
+- LinkedIn: [@jos kalenda](https://www.linkedin.com/in/jos-kalenda/)
+- Twiter: [@jos kalenda](https://www.linkedin.com/in/JosKalenda/)
+
 
 ## 🤝 Contributing
 

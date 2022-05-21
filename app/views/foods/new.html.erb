@@ -1,0 +1,12 @@
+<%= render 'shared/navbar' %>
+<h1 class="center mt-4">Add new food</h1>
+
+<div class="container">
+  <div class="border-form mb-3">
+    <%= render 'form', food: @foods %>
+  </div>
+  <div class="center">
+    <%= link_to 'Back', {:action => 'index'} %>
+  </div>
+</div>
+<%= render 'shared/footer' %>
